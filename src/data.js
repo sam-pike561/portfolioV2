@@ -29,11 +29,6 @@ export const featuredPortfolio = [
         title: "Amazonia",
         img: "./1.png"
     },
-                      {
-        id: 7,
-        title: "Amazonia",
-        img: "./1.png"
-    },
 ]
 
 export const mobilePortfolio = [

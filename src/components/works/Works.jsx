@@ -11,55 +11,23 @@ export default function Works() {
         img: "./assets/2.png",
         desc: "jeh;lasdfjasdflasdf",
 
+        },
+         {
+        id: 2,
+        title: "Amazonia",
+        img: "./assets/3.png",
+        description: "jeh;lasdfjasdflasdf",
+
     },
             {
         id: 1,
-        title: "E-Commerce App",
-        img: "./assets/3.png",
-        desc: "jeh;lasdfjasdflasdf",
-    },
-        {
-        id: 2,
-        title: "SurvStat",
-        img: "./assets/2.png",
-        desc: "jeh;lasdfjasdflasdf",
-
-    },
-            {
-        id: 3,
         title: "Wiki App",
         img: "./assets/1.png",
         desc: "jeh;lasdfjasdflasdf",
+    },
+       
+                   
 
-        
-    },
-                {
-        id: 4,
-        title: "WebRTC App",
-        img: "./assets/intro_pic_portfolio.png",
-        desc: "jeh;lasdfjasdflasdf",
-    },
-                    {
-        id: 5,
-        title: "Amazonia",
-        img: "./assets/1.png",
-        description: "jeh;lasdfjasdflasdf",
-
-    },
-                     {
-        id: 6,
-        title: "Amazonia",
-        img: "./assets/1.png",
-        description: "jeh;lasdfjasdflasdf",
-
-    },
-                      {
-        id: 7,
-        title: "Amazonia",
-        img: "./assets/1.png",
-        description: "jeh;lasdfjasdflasdf",
-
-    },
     ];
 
     const handleClick = (way)=>{
