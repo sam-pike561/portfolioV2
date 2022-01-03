@@ -2,38 +2,46 @@ import "./testimonials.scss";
 
 export default function Testimonials() {
   const data = 
-[{
+[
+  {
   "id": 1,
-  "title": "Violet",
-  "name": "tha God",
-  "img": "./assets/portrait_pike.png",
-  "icon": "http://dummyimage.com/184x100.png/5fa2dd/ffffff",
-  "desc": "Maecenas rhoncus aliquam lacus. Morbi quis tortor id nulla ultrices aliquet. Maecenas leo odio, condimentum id, luctus nec, molestie sed, justo. Pellentesque viverra pede ac diam. Cras pellentesque volutpat dui. Maecenas tristique, est et tempus semper, est quam pharetra magna, ac consequat metus sapien ut nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Mauris viverra diam vitae quam. Suspendisse potenti. Nullam porttitor lacus at turpis. Donec posuere metus vitae ipsum.",
-}, {
-    "id": 2,
-      "name": "tha God",
-  "title": "Pink",
-  "img": "http://dummyimage.com/187x100.png/dddddd/000000",
-  "icon": "http://dummyimage.com/153x100.png/5fa2dd/ffffff",
-    "desc": "Vivamus tortor. Duis mattis egestas metus. Aenean fermentum. Donec ut mauris eget massa tempor convallis. Nulla neque libero, convallis eget, eleifend luctus, ultricies eu, nibh. Quisque id justo sit amet sapien dignissim vestibulum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla dapibus dolor vel est.",
+  "title": "JS Algorithms + Data Structures",
+  "name": "Stephen Grider's",
+  "leftImage": "assets/javascript-logo.png", 
+  "img": "./assets/grider.png",
+  "icon": "/assets/udemy-image.png",
+  "desc": "Master commonly asked interview questions. Tackle common data structures used in web development. Practice dozens of different challenges. Use Javascript to solve challenging algorithms",
+  }, 
+  {
+  "id": 2,
+  "name": "Colt Steele's",
+  "title": "Modern React/Redux Bootcamp",
+  "leftImage": "assets/react-icon.svg.png", 
+  "img": "assets/colt.png",
+  "icon":  "/assets/udemy-image.png",
+  "desc": "Use React Hooks! (My favorite part of React!). The new Context API. State management w/ useReducer + use Context (Redux Lite). The basics of React (props, state, etc). Master React Router. React State Management Patterns. Drag & Drop With React. Writing dynamically styled components w/ JSS. Common React Router Patterns. Work with tons of libraries and tools.",
   "featured": "true",
-}, {
+  }, 
+  {
   "id": 3,
-  "name": "tha God",
-  "title": "Goldenrod",
-  "img": "http://dummyimage.com/217x100.png/5fa2dd/ffffff",
-  "icon": "http://dummyimage.com/157x100.png/dddddd/000000",
-  "desc": "Vivamus tortor. Duis mattis egestas metus. Aenean fermentum. Donec ut mauris eget massa tempor convallis. Nulla neque libero, convallis eget, eleifend luctus, ultricies eu, nibh. Quisque id justo sit amet sapien dignissim vestibulum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla dapibus dolor vel est. Donec odio justo, sollicitudin ut, suscipit a, feugiat et, eros.",
-}]
+  "name": "Stephen Grider's",
+  "title": "Node with React: Fullstack Web Development",
+  "leftImage": "assets/react-icon.svg.png", 
+  "img": "assets/grider.png",
+  "icon": "/assets/udemy-image.png",
+  "desc": "Create boilerplate starter projects with React, Redux, Express, and Mongo. Understand common web technologies and design patterns to connect them together Master deployment techniques between the production and development environments. Make an app with Google OAuth authentication. Learn to effectively create and send emails from a backend server.",
+  }
+]
     
     return (
         <div className="testimonials" id="testimonials">
-            <h1>Testimonials</h1>
+            <h1>Certifications</h1>
             <div className="container">
                 {data.map(d => (
                     <div className={d.featured ? "card featured" : "card"}>
                         <div className="top">
-                            <img src="assets/right_arrow.png" className="left" alt="" />
+                            <img src={d.leftImage}
+                            className="left" alt="" />
                             <img
                                 className="user"
                                 src={d.img}
