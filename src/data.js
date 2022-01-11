@@ -29,20 +29,19 @@ export const featuredPortfolio = [
 export const designPortfolio = [
     {
         id: 0,
-        title: "Reusable Dashboard",
-        img: "./1.png"
+        title: "React Portfolio",
+        img: "./assets/portfolio_previous.png"
     },
         {
         id: 1,
         title: "Amazonia",
-        img: "./1.png"
+        img: "./assets/3.png"
     },
-            {
-        id: 2,
-        title: "Pokedex",
-        img: "./1.png"
-    },
-
+    //         {
+    //     id: 2,
+    //     title: "Pokedex",
+    //     img: "./1.png"
+    // },
 ]
 
 export const contentPortfolio = [
@@ -64,11 +63,11 @@ export const contentPortfolio = [
 ]
 
 export const webPortfolio = [
-    {
-        id: 0,
-        title: "Bookkeeper",
-        img: "./1.png"
-    },
+    // {
+    //     id: 0,
+    //     title: "Bookkeeper",
+    //     img: "./1.png"
+    // },
         {
         id: 1,
         title: "Wiki App",

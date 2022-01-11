@@ -5,7 +5,7 @@ import {
     featuredPortfolio,
     webPortfolio,
     designPortfolio,
-    contentPortfolio
+    // contentPortfolio
 } from "../../data.js";
 
 export default function Portfolio() {
@@ -25,7 +25,7 @@ export default function Portfolio() {
             title: "Design App",
         },
         {
-            id: "content",
+            id: "Routing",
             title: "Content",
         }
     ];
@@ -38,9 +38,9 @@ export default function Portfolio() {
             case "web":
                 setData(webPortfolio);
                 break;
-            case "content":
-                setData(contentPortfolio);
-                break;
+            // case "content":
+            //     setData(contentPortfolio);
+            //     break;
             case "design":
                 setData(designPortfolio);
                 break;
