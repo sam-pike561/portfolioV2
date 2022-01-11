@@ -16,10 +16,12 @@
         flex: 1;
         
         img{
-            height: 100%;
+            height: 90%;
             width: 100%;
-            overflow: hidden;
+            overflow: clip;
+
         }
+        
     }
     .right{
         flex: 1;
@@ -29,6 +31,7 @@
         justify-content: center;
         h2{
             font-size: 30px;
+            overflow: hidden;
         }
 
         form{
@@ -38,9 +41,13 @@
             flex-direction: column;
             align-items: center;
             justify-content: space-around;
-                    background-color: whitesmoke;
-height: 70%;
-          border-radius: 10px;
+            background-color: whitesmoke;
+            height: 70%;
+            border-radius: 10px;
+
+            @include mobile{
+              height: 90%;
+             }
           
 
             input{
